@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+	body
+	{
+    	background-image : url('/static/foodreviews.jpg');
+    	background-size: cover;
+    	background-repeat: no-repeat;
+	}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container" style = "margin-top: 180px;color: white; text-align : center; font-size : 30px">
+		<div id="brandname">
+    		Prediction using Machine Learning
+		</div>
+		<h4>Result</h4>
+		
+	</div>
+	</header>
+	<div class="results">
+
+
+		
+	{% if prediction == 1%}
+	<h1 style="color:white; text-align:center;">The review entered is Positive</h1>
+	{% elif prediction == 0%}
+	<h1 style="color:white; text-align:center">The review entered is Negative</h1>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
