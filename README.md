@@ -1,9 +1,9 @@
 # NLP-Model-Deployment
 # Sentiment analysis using NLP and machine learning
 
-Sentiment Analysis of restaurant food Reviews is either positive or negative review, the dataset which is used is "IMDB Dataset of 50K Food Reviews" and the following machine learning which I used is Logistic Regression , Random Forest and LinearSVC.
+Sentiment Analysis of restaurant food Reviews is either positive or negative review, the dataset which is used is "Dataset of 10K Food Reviews" and the following machine learning which I used is Logistic Regression , Random Forest and LinearSVC.
 
-# Logistic regression shows maximum accuracy that is 90%
+# Logistic regression shows maximum accuracy that is 80%
 
 # Requirement
 
