@@ -66,6 +66,12 @@ def predict():
     '''
     if request.method == 'POST':
         message = request.form['message']
+	message = re.sub("[^a-zA-Z]"," ",message)
+        message = message.lower().split()
+        all_stopwords = stopwords.words('english')
+        all_stopwords.remove('not') 
+        message = [stemmer.stem(word) for word in message if word not in set(all_stopwords)]   
+        message = " ".join(message)
         data = [message]
         vect = cv.transform(data).toarray()
         my_prediction = clf.predict(vect)
